@@ -9,8 +9,10 @@ Steps to build knowledge Graph for search:
 3.Querying the graph 
 
 Step1:Generating triples from given text:
+
 Extraction of triples from documents contains mainly two steps:
 1.Entity Extraction:
+
 Named entity extraction is a popular technique used in information extraction which extracts the entities from text based on predefined classes.Different NER systems to generate entities from given text:
     • spacy NER,Stanford NER
     • Pretrained models like BERT,Elmo 
@@ -18,6 +20,7 @@ Named entity extraction is a popular technique used in information extraction wh
     • Deep learning algorithms like Bidirectional LSTM-CRF,LSTM-CNN
 
 2.Finding Relation between entities:
+
 Once the entities are extracted from text,next we have to find the relation between these entities . It is the task of extracting semantic  relations between two or more entities .For example: Tajmahal is in Agra .Here Tajmahal is head entity,is in is relation ,Agra is Tail Entity.This can be represented as triple(Tajmahal,is in,Agra)
 There are different methods for doing Relation Extraction,few of them are
     • Rule-based RE
@@ -75,15 +78,8 @@ def triple_generation(text,file_name):
 print(triple_generation ("Barack Obama was born in Hawaii.","output.csv"))
 
 
-
-
-
-
-
-
-
-
 Step2:Storing triples in Graph Database:
+
 Graph databases are designed to store nodes and their relations(edges).Graph databases give first priority to relationships.Unlike other database management systems, in graph databases connected data is equally important to individual data.
 
 Applications of Graph databases:
@@ -146,10 +142,8 @@ MATCH (n:Subject) RETURN n LIMIT 25
 or you can access the neo4j graph with credentials using python script.
 
 
-
-
-
 Conclusion:
+
 We are using knowledge graphs in our daily life without knowing it.For example we use google search daily but many people don't know that it is using  knowledge graph in backend.Many advanced concepts are there to build a knowledge graph using artificial intelligence,In this blog i have explained a basic way to generate a knowledge graph using stanford openie and neo4j with python .Further ,we can predict the missing relations between the entities using link prediction or relation prediction concepts.
 
 
