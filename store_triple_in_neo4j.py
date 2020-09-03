@@ -6,7 +6,7 @@ import pandas as pd
 
 graph = Graph("http://localhost:7474", auth=("neo4j", "neo4j"))
 
-df = pd.read_csv("output.csv")
+df = pd.read_csv("triple.csv")
 ##The header of the csv file must be subject ,relation,object
 for index, row in triples_df.iterrows():
      tx = graph.begin()
