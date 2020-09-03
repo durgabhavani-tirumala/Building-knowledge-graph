@@ -1,10 +1,14 @@
 Steps to build knowledge Graph for search:
 
 1.Generating triples from given text
+
 2.Storing Triples in Graph Database
+
 3.Querying the graph 
 
-In this article i'm going to  explain how to generate triples using stanford-openie python module:
+
+
+Step1:1.Generating triples from given text
 
 Open information extraction (openie) was released by the stanford natural processing group.This software is a Java implementation of an open IE system.
 
@@ -28,6 +32,8 @@ pip install stanford-openie
 pip install stanford-openiepip install stanford-openie
 
 The openie is supporting only 100000 characters,so the length of the text must be below 100000 characters ,you can know the length of the text by using below python 
-syntax 
+
+
+Run 
 
 
