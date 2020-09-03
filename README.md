@@ -39,4 +39,18 @@ The openie is supporting only 100000 characters,so the length of the text must b
 
 Run triple_generator.py program to generate triples from txt files
 
+Step2:Storing triples in Graph Database:
 
+Neo4j is available in two editions:
+
+    • Community edition:It is fully functional and designed for single instance deployments .
+    
+    • Enterprise edition:It has all the features of community edition and has extra features like clustering and online backup facility .
+    
+Installation steps for community edition:
+
+    • In windows, download neo4j from https://neo4j.com/download/neo4j-desktop/?edition=desktop&flavour=unix&release=1.2.9&offline=true and install it
+    
+    • In ubuntu, java has to be installed to install neo4j.Follow the steps in below link to install neo4j in ubuntu  https://dzone.com/articles/installing-neo4j-on-ubuntu-1604
+ 
+Once the installation is completed neo4j can be accessible in the browser also,the default username and password for the browser version is neo4j.
