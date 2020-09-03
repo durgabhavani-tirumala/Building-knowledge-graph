@@ -23,12 +23,15 @@ java -version
 3.If OS is linux system,install the java using below commands
 
 sudo add-apt-repository ppa:webupd8team/java
+
 sudo apt-get update
+
 sudo apt-get install oracle-java8-installer
 
 4.Install stanford openie python package using below command:
 
 pip install stanford-openie
+
 pip install stanford-openiepip install stanford-openie
 
 The openie is supporting only 100000 characters,so the length of the text must be below 100000 characters ,you can know the length of the text by using below python 
